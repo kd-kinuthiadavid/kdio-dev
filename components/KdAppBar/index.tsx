@@ -3,8 +3,13 @@ import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
 import styled from "styled-components";
+import Button from "@mui/material/Button";
+import useMediaQuery from "@mui/material/useMediaQuery";
+import ContactPageIcon from "@mui/icons-material/ContactPage";
+import WorkIcon from "@mui/icons-material/Work";
+import PersonIcon from "@mui/icons-material/Person";
+
 import Logo from "../../assets/images/Logo.png";
-import { Button, useMediaQuery } from "@mui/material";
 
 const KdAppBar = () => {
   const isMobile = useMediaQuery("(max-width: 650px)");
@@ -42,9 +47,9 @@ const KdAppBar = () => {
           sx={{ top: "auto", bottom: 0, backgroundColor: "#32174D" }}
         >
           <AppToolBar>
-            <p>About</p>
-            <p>Work</p>
-            <p>Contact</p>
+            <PersonIcon />
+            <WorkIcon />
+            <ContactPageIcon />
           </AppToolBar>
         </AppBar>
       )}
