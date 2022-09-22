@@ -6,9 +6,11 @@ const GlobalStyle = createGlobalStyle`
   }
   html,
   body {
-    color: ${({ theme }) => theme.colors.primary};
+    color: ${({ theme }) => theme.colors.text};
     padding: 0;
     margin: 0;
+    background-color: ${({ theme }) => theme.colors.primary};
+    height: 100vh;
   }
 
   a {
