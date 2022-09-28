@@ -14,6 +14,11 @@ declare module 'styled-components' {
     spacing: {
       borderRadius: string;
       borderRadiusNav: string;
+      bodyMargin: string;
+    };
+    breakPoints: {
+      isMobile: string;
+      isTablet: string;
     };
   }
 }
