@@ -16,8 +16,14 @@ const HeroSection = (): JSX.Element => {
         <HiglightedText>
           building elegant, functional and intuitive UIs
         </HiglightedText>
-        . You’re highly encouraged to <HiglightedText>see</HiglightedText> some
-        of <HiglightedText> my work below</HiglightedText> :)
+        . Am currently modernizing the account receivable finance operations in
+        Africa{" "}
+        <HiglightedText className="highlighted_link">
+          <a target="_blank" rel="noreferrer" href="https://www.churpy.co/">
+            @Churpy
+          </a>
+        </HiglightedText>
+        .
       </p>
 
       <div className="cta">
@@ -85,6 +91,11 @@ const Wrapper = styled.div`
     max-width: 50vw;
     text-align: left;
     margin: 0;
+
+    .highlighted_link:hover {
+      text-decoration: underline;
+      cursor: pointer;
+    }
   }
 
   .cta {
