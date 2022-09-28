@@ -17,5 +17,8 @@ const ButtonText = styled.p`
 
 const NavText = styled(ButtonText)``;
 
+const HiglightedText = styled.span`
+  color: ${({ theme }) => theme.colors.text};
+`;
 
-export { Heading, SubHeading, BodyText, ButtonText, NavText };
+export { Heading, SubHeading, BodyText, ButtonText, NavText, HiglightedText };

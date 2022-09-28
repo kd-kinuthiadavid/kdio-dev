@@ -13,7 +13,8 @@ const defaultTheme: DefaultTheme = {
   spacing: {
     borderRadius: "5px",
     borderRadiusNav: "15px",
-    bodyMargin: "0 1.5rem",
+    navMargin: "0 1.5rem",
+    bodyMargin: "0 3rem",
   },
   breakPoints: {
     isMobile: "650px",

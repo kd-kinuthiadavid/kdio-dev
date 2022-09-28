@@ -1,4 +1,5 @@
 import Head from "next/head";
+import HeroSection from "../components/HeroSection";
 import KdAppBar from "../components/KdAppBar";
 
 export default function Home() {
@@ -11,7 +12,7 @@ export default function Home() {
       </Head>
       <main>
         <KdAppBar />
-        index
+        <HeroSection />
       </main>
     </div>
   );
