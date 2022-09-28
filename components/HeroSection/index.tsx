@@ -108,10 +108,11 @@ const CTABtn = styled(Button)`
   width: 11rem;
   height: 3rem;
   font-size: 1rem;
+  color: ${({ theme }) => theme.colors.secondary};
 
   &:hover {
     background-color: ${({ theme }) => theme.colors.secondary};
-    color: ${({ theme }) => theme.colors.text};
+    color: ${({ theme }) => theme.colors.primary};
   }
 
   @media (max-width: ${({ theme }) => theme.breakPoints.isMobile}) {
@@ -122,6 +123,7 @@ const CTABtn = styled(Button)`
 `;
 
 const SecCTABtn = styled(CTABtn)`
+  color: ${({ theme }) => theme.colors.text};
   &:hover {
     color: ${({ theme }) => theme.colors.secondary};
     border-color: ${({ theme }) => theme.colors.secondary};
