@@ -15,6 +15,7 @@ declare module 'styled-components' {
       borderRadius: string;
       borderRadiusNav: string;
       bodyMargin: string;
+      navMargin: string;
     };
     breakPoints: {
       isMobile: string;

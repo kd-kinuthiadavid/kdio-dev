@@ -53,7 +53,7 @@ const AppToolBar = styled(Toolbar)`
   justify-content: space-between;
   padding: 0.5rem 0;
   font-family: ${({ theme }) => theme.fonts.heading};
-  margin: ${({ theme }) => theme.spacing.bodyMargin};
+  margin: ${({ theme }) => theme.spacing.navMargin};
 
   img {
     height: 4rem;
