@@ -10,7 +10,7 @@ const HeroSection = (): JSX.Element => {
         I Build Elegant, <br /> Functional & Intuitive UIs.
       </h1>
       <p>
-        Hello There, my name is <HiglightedText>David Kinuthia</HiglightedText>.
+        Hello there, my name is <HiglightedText>David Kinuthia</HiglightedText>.
         I am a <HiglightedText>frontend engineer</HiglightedText> and I
         specialize in{" "}
         <HiglightedText>
