@@ -56,22 +56,23 @@ const AppToolBar = styled(Toolbar)`
   margin: ${({ theme }) => theme.spacing.navMargin};
 
   img {
-    height: 4rem;
-    width: 4rem;
+    height: 3rem;
+    width: 3rem;
   }
 `;
 
 const InlineNav = styled.div`
   display: flex;
-  gap: 2rem;
+  gap: 1rem;
 
-  border: ${({ theme }) => `2px solid ${theme.colors.text}`};
+  border: ${({ theme }) => `1px solid ${theme.colors.text}`};
   color: ${({ theme }) => theme.colors.text};
-  padding: 0 1.5rem;
+  padding: 0 1rem;
   border-radius: ${({ theme }) => theme.spacing.borderRadiusNav};
   font-family: ${({ theme }) => theme.fonts.heading};
 
   p {
+    font-size: 0.9rem;
     &:hover {
       cursor: pointer;
       color: ${({ theme }) => theme.colors.secondary};

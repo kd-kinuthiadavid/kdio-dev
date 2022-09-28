@@ -19,6 +19,7 @@ const defaultTheme: DefaultTheme = {
   breakPoints: {
     isMobile: "650px",
     isTablet: "900px",
+    isDesktop: "1280px",
   },
 };
 

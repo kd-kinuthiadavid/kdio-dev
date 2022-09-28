@@ -49,50 +49,54 @@ const HeroSection = (): JSX.Element => {
 };
 
 const Wrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 3rem;
   font-family: ${({ theme }) => theme.fonts.heading};
   color: ${({ theme }) => theme.colors.secondary};
-  margin: ${({ theme }) => theme.spacing.bodyMargin};
+  padding: 10rem 10rem;
+
+  @media (min-width: ${({ theme }) => theme.breakPoints.isDesktop}) {
+    padding: 13rem 8rem;
+  }
+
+  @media (max-width: ${({ theme }) => theme.breakPoints.isTablet}) {
+    padding: 10rem 5rem;
+  }
+
+  @media (max-width: ${({ theme }) => theme.breakPoints.isMobile}) {
+    padding: 10rem 2rem;
+  }
 
   h1 {
-    font-size: 5rem;
-    line-height: 6.25rem;
-    max-width: 90%;
-
-    @media (max-width: ${({ theme }) => theme.breakPoints.isMobile}) {
-      font-size: 4rem;
-      line-height: 5rem;
-      min-width: 100%;
-    }
+    font-size: 4rem;
+    line-height: 5rem;
+    text-align: left;
+    margin: 0;
   }
 
   p {
     font-family: ${({ theme }) => theme.fonts.text};
-    font-size: 1.5rem;
+    font-size: 1.1rem;
     font-weight: 400;
-    line-height: 2.1rem;
-    max-width: 60%;
+    line-height: 1.6rem;
 
-    @media (max-width: ${({ theme }) => theme.breakPoints.isTablet}) {
-      max-width: 90%;
-    }
-
-    @media (max-width: ${({ theme }) => theme.breakPoints.isMobile}) {
-      font-size: 1.3rem;
-      line-height: 1.8rem;
-    }
+    max-width: 50vw;
+    text-align: left;
+    margin: 0;
   }
 
   .cta {
     display: flex;
-    gap: 1rem;
-    margin: 5rem 0;
+    gap: 1.5rem;
   }
 `;
 
 const CTABtn = styled(Button)`
-  width: 15rem;
-  height: 4rem;
-  font-size: 1.3rem;
+  width: 11rem;
+  height: 3rem;
+  font-size: 1rem;
 
   &:hover {
     background-color: ${({ theme }) => theme.colors.secondary};

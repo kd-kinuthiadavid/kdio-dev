@@ -20,6 +20,7 @@ declare module 'styled-components' {
     breakPoints: {
       isMobile: string;
       isTablet: string;
+      isDesktop: string;
     };
   }
 }
