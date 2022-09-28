@@ -42,32 +42,6 @@ const KdAppBar = () => {
           </AppBtn>
         </AppToolBar>
       </AppBar>
-      {isMobile && (
-        <AppBar
-          position="fixed"
-          color="inherit"
-          sx={{ top: "auto", bottom: 0, backgroundColor: "#32174D" }}
-        >
-          <AppToolBar>
-            <div className="b_nav_item">
-              <PersonIcon className="b_nav_icon" />
-              <small>About</small>
-            </div>
-            <div className="b_nav_item">
-              <WorkIcon className="b_nav_icon" />
-              <small>Work</small>
-            </div>
-            <div className="b_nav_item">
-              <HistoryEduIcon className="b_nav_icon" />
-              <small>Poetry</small>
-            </div>
-            <div className="b_nav_item">
-              <ContactPageIcon className="b_nav_icon" />
-              <small>Contact</small>
-            </div>
-          </AppToolBar>
-        </AppBar>
-      )}
     </Box>
   );
 };
@@ -84,22 +58,6 @@ const AppToolBar = styled(Toolbar)`
   img {
     height: 4rem;
     width: 4rem;
-  }
-
-  .b_nav_item {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 0.5rem;
-
-    .b_nav_icon {
-      font-size: 2rem;
-    }
-
-    &:hover {
-      color: ${({ theme }) => theme.colors.secondary};
-    }
   }
 `;
 
