@@ -29,7 +29,6 @@ const HeroSection = (): JSX.Element => {
       <div className="cta">
         <CTABtn
           variant="contained"
-          color="inherit"
           sx={{
             color: "#FFEBD6",
             backgroundColor: "#FF007C",
@@ -41,7 +40,6 @@ const HeroSection = (): JSX.Element => {
         </CTABtn>
         <SecCTABtn
           variant="outlined"
-          color="inherit"
           sx={{
             color: "#FF007C",
             textTransform: "capitalize",
@@ -112,7 +110,7 @@ const CTABtn = styled(Button)`
   font-size: 1rem;
   color: ${({ theme }) => theme.colors.secondary};
 
-  &:hover {
+  &.MuiButton-contained:hover {
     background-color: ${({ theme }) => theme.colors.secondary};
     color: ${({ theme }) => theme.colors.primary};
   }
@@ -126,9 +124,7 @@ const CTABtn = styled(Button)`
 
 const SecCTABtn = styled(CTABtn)`
   color: ${({ theme }) => theme.colors.text};
-
   &:hover {
-    border: ${({ theme }) => `1px solid ${theme.colors.text}`};
     color: ${({ theme }) => theme.colors.secondary};
     border-color: ${({ theme }) => theme.colors.secondary};
     background-color: ${({ theme }) => theme.colors.primary};
