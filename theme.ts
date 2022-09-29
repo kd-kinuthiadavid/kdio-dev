@@ -14,7 +14,10 @@ const defaultTheme: DefaultTheme = {
     borderRadius: "5px",
     borderRadiusNav: "15px",
     navMargin: "0 1.5rem",
-    bodyMargin: "0 3rem",
+    bodyXMargin: "10rem",
+    desktopBodyXMargin: "8rem",
+    tabletBodyXMargin: "5rem",
+    mobileBodyXMargin: "2rem",
   },
   breakPoints: {
     isMobile: "650px",
