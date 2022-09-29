@@ -21,6 +21,7 @@ declare module 'styled-components' {
       navMargin: string;
     };
     breakPoints: {
+      isSmallMobile: string;
       isMobile: string;
       isTablet: string;
       isDesktop: string;
