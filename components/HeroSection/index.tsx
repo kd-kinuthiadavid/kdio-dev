@@ -36,7 +36,7 @@ const HeroSection = (): JSX.Element => {
             fontFamily: "'JetBrains Mono', monospace",
           }}
         >
-          Hire Me
+          Let's Chat
         </CTABtn>
         <SecCTABtn
           variant="outlined"
