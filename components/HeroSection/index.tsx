@@ -79,7 +79,14 @@ const Wrapper = styled.div`
     font-size: 4rem;
     line-height: 5rem;
     text-align: left;
+    overflow-wrap: break-word; // or 'word-wrap: break-word';
     margin: 0;
+
+    @media (max-width: ${({ theme }) => theme.breakPoints.isSmallMobile}) {
+      font-size: 3rem;
+      line-height: 3.5rem;
+      max-width: 90vw;
+    }
   }
 
   p {
@@ -91,6 +98,10 @@ const Wrapper = styled.div`
     max-width: 50vw;
     text-align: left;
     margin: 0;
+
+    @media (max-width: ${({ theme }) => theme.breakPoints.isSmallMobile}) {
+      max-width: 100vw;
+    }
 
     .highlighted_link:hover {
       text-decoration: underline;
@@ -130,6 +141,10 @@ const CTABtn = styled(Button)`
 
 const SecCTABtn = styled(CTABtn)`
   color: ${({ theme }) => theme.colors.text};
+
+  @media (max-width: ${({ theme }) => theme.breakPoints.isSmallMobile}) {
+    display: none;
+  }
 `;
 
 export default HeroSection;
