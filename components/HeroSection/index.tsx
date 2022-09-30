@@ -75,6 +75,10 @@ const Wrapper = styled.div`
     padding: 10rem 2rem;
   }
 
+  @media (max-width: ${({ theme }) => theme.breakPoints.isSmallMobile}) {
+    padding: 3rem 1rem;
+  }
+
   h1 {
     font-size: 4rem;
     line-height: 5rem;
@@ -83,8 +87,8 @@ const Wrapper = styled.div`
     margin: 0;
 
     @media (max-width: ${({ theme }) => theme.breakPoints.isSmallMobile}) {
-      font-size: 3rem;
-      line-height: 3.5rem;
+      font-size: 2rem;
+      line-height: 2.5rem;
       max-width: 90vw;
     }
   }
@@ -101,6 +105,8 @@ const Wrapper = styled.div`
 
     @media (max-width: ${({ theme }) => theme.breakPoints.isSmallMobile}) {
       max-width: 100vw;
+      font-size: 0.9rem;
+      line-height: 1.3rem;
     }
 
     .highlighted_link:hover {
