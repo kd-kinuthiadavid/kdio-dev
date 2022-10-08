@@ -142,6 +142,12 @@ const CTABtn = styled(Button)`
     background-color: ${({ theme }) => theme.colors.primary};
   }
 
+  &.MuiButton-outlined {
+    @media (max-width: ${({ theme }) => theme.breakPoints.isMobile}) {
+      display: none;
+    }
+  }
+
   @media (max-width: ${({ theme }) => theme.breakPoints.isMobile}) {
     width: 13rem;
     height: 3rem;
@@ -151,10 +157,6 @@ const CTABtn = styled(Button)`
 
 const SecCTABtn = styled(CTABtn)`
   color: ${({ theme }) => theme.colors.text};
-
-  @media (max-width: ${({ theme }) => theme.breakPoints.isMobile}) {
-    display: none;
-  }
 `;
 
 export default HeroSection;
