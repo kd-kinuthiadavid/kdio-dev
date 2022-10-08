@@ -51,12 +51,15 @@ export default KdAppBar;
 const AppToolBar = styled(Toolbar)`
   display: flex;
   justify-content: space-between;
-  padding: 0.5rem 0;
+
   font-family: ${({ theme }) => theme.fonts.heading};
   margin: ${({ theme }) => theme.spacing.navMargin};
 
-  @media (max-width: ${({ theme }) => theme.breakPoints.isSmallMobile}) {
-    margin: 0 1rem;
+  &.MuiToolbar-root {
+    padding: 0.5rem 0;
+    @media (max-width: ${({ theme }) => theme.breakPoints.isSmallMobile}) {
+      margin: 0 1rem;
+    }
   }
 
   img {
