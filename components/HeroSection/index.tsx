@@ -109,6 +109,10 @@ const Wrapper = styled.div`
       line-height: 1.3rem;
     }
 
+    @media (max-width: ${({ theme }) => theme.breakPoints.isMobile}) {
+      max-width: 100vw;
+    }
+
     .highlighted_link:hover {
       text-decoration: underline;
       cursor: pointer;
@@ -148,7 +152,7 @@ const CTABtn = styled(Button)`
 const SecCTABtn = styled(CTABtn)`
   color: ${({ theme }) => theme.colors.text};
 
-  @media (max-width: ${({ theme }) => theme.breakPoints.isSmallMobile}) {
+  @media (max-width: ${({ theme }) => theme.breakPoints.isMobile}) {
     display: none;
   }
 `;

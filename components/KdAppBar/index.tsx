@@ -55,6 +55,10 @@ const AppToolBar = styled(Toolbar)`
   font-family: ${({ theme }) => theme.fonts.heading};
   margin: ${({ theme }) => theme.spacing.navMargin};
 
+  @media (max-width: ${({ theme }) => theme.breakPoints.isSmallMobile}) {
+    margin: 0 1rem;
+  }
+
   img {
     height: 3rem;
     width: 3rem;
