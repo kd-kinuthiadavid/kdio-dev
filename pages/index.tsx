@@ -1,4 +1,5 @@
 import Head from "next/head";
+import AboutSection from "../components/AboutSection";
 import HeroSection from "../components/HeroSection";
 import KdAppBar from "../components/KdAppBar";
 
@@ -13,6 +14,7 @@ export default function Home() {
       <main>
         <KdAppBar />
         <HeroSection />
+        <AboutSection />
       </main>
     </div>
   );
