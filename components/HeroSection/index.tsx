@@ -61,22 +61,22 @@ const Wrapper = styled.div`
   gap: 3rem;
   font-family: ${({ theme }) => theme.fonts.heading};
   color: ${({ theme }) => theme.colors.secondary};
-  padding: 10rem 10rem;
+  padding: 10rem 0rem;
 
   @media (min-width: ${({ theme }) => theme.breakPoints.isDesktop}) {
-    padding: 13rem 8rem;
+    padding: 13rem 0;
   }
 
   @media (max-width: ${({ theme }) => theme.breakPoints.isTablet}) {
-    padding: 10rem 5rem;
+    padding: 10rem 0;
   }
 
   @media (max-width: ${({ theme }) => theme.breakPoints.isMobile}) {
-    padding: 10rem 2rem;
+    padding: 10rem 0;
   }
 
   @media (max-width: ${({ theme }) => theme.breakPoints.isSmallMobile}) {
-    padding: 3rem 1rem;
+    padding: 3rem 0;
   }
 
   h1 {
