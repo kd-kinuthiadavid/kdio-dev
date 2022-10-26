@@ -65,8 +65,8 @@ const Wrapper = styled.div`
     font-family: ${({ theme }) => theme.fonts.text};
 
     p {
-      font-size: 1rem;
-      line-height: 1.6rem;
+      font-size: 1.188rem;
+      line-height: 1.5em;
       text-align: left;
     }
 

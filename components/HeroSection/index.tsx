@@ -87,8 +87,8 @@ const Wrapper = styled.div`
     margin: 0;
 
     @media (max-width: ${({ theme }) => theme.breakPoints.isSmallMobile}) {
-      font-size: 3rem;
-      line-height: 3.5rem;
+      font-size: 2rem;
+      line-height: 2.5rem;
       max-width: 90vw;
     }
   }
@@ -105,7 +105,8 @@ const Wrapper = styled.div`
 
     @media (max-width: ${({ theme }) => theme.breakPoints.isSmallMobile}) {
       max-width: 100vw;
-      font-size: 1rem;
+      font-size: 0.9rem;
+      line-height: 1.3rem;
     }
 
     @media (max-width: ${({ theme }) => theme.breakPoints.isMobile}) {
