@@ -23,7 +23,7 @@ const StyledMain = styled.main`
   padding: 0 10rem;
 
   @media (min-width: ${({ theme }) => theme.breakPoints.isDesktop}) {
-    padding: 0 8rem;
+    padding: 0 25rem;
   }
 
   @media (max-width: ${({ theme }) => theme.breakPoints.isTablet}) {

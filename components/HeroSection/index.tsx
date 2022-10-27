@@ -91,6 +91,14 @@ const Wrapper = styled.div`
       line-height: 2.5rem;
       max-width: 90vw;
     }
+
+    @media (max-width: ${({ theme }) => theme.breakPoints.isDesktop}) {
+      max-width: 65vw;
+    }
+
+    @media (min-width: ${({ theme }) => theme.breakPoints.isDesktop}) {
+      max-width: 50vw;
+    }
   }
 
   p {
@@ -102,6 +110,14 @@ const Wrapper = styled.div`
     max-width: 50vw;
     text-align: left;
     margin: 0;
+
+    @media (min-width: ${({ theme }) => theme.breakPoints.isDesktop}) {
+      max-width: 30vw;
+    }
+
+    @media (max-width: ${({ theme }) => theme.breakPoints.isDesktop}) {
+      max-width: 50vw;
+    }
 
     @media (max-width: ${({ theme }) => theme.breakPoints.isSmallMobile}) {
       max-width: 100vw;
@@ -117,11 +133,10 @@ const Wrapper = styled.div`
       text-decoration: underline;
       cursor: pointer;
     }
-  }
-
-  .cta {
-    display: flex;
-    gap: 1.5rem;
+    .cta {
+      display: flex;
+      gap: 1.5rem;
+    }
   }
 `;
 
