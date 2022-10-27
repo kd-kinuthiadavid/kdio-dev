@@ -24,6 +24,10 @@ export default function Home() {
 const StyledMain = styled.main`
   // from isTablet going up; between isTb and isXlD
   @media (min-width: ${({ theme }) => theme.breakPoints.isTablet}) {
+    padding: 0 6rem;
+  }
+
+  @media (min-width: ${({ theme }) => theme.breakPoints.isDesktop}) {
     padding: 0 10rem;
   }
 

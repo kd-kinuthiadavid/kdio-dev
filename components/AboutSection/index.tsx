@@ -65,8 +65,16 @@ const Wrapper = styled.section`
     display: flex;
     gap: 2rem;
 
+    @media (max-width: 800px) {
+      flex-direction: column;
+    }
+
     .about_text {
       max-width: 50vw;
+
+      @media (max-width: 800px) {
+        max-width: 100%;
+      }
 
       p {
         /* max-width: 80%; */
@@ -82,6 +90,10 @@ const Wrapper = styled.section`
       max-width: 50vw;
       background-color: ${({ theme }) => theme.colors.secondary};
       border-radius: ${({ theme }) => theme.spacing.borderRadius};
+
+      @media (max-width: 800px) {
+        align-self: center;
+      }
     }
   }
 `;
