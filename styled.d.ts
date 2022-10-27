@@ -25,6 +25,7 @@ declare module 'styled-components' {
       isMobile: string;
       isTablet: string;
       isDesktop: string;
+      isXlDesktop: string;
     };
   }
 }

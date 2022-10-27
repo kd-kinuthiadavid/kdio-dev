@@ -22,20 +22,27 @@ export default function Home() {
 }
 
 const StyledMain = styled.main`
-  padding: 0 10rem;
+  // from isTablet going up; between isTb and isXlD
+  @media (min-width: ${({ theme }) => theme.breakPoints.isTablet}) {
+    padding: 0 10rem;
+  }
 
-  @media (min-width: ${({ theme }) => theme.breakPoints.isDesktop}) {
+  // from isXlD going up
+  @media (min-width: ${({ theme }) => theme.breakPoints.isXlDesktop}) {
     padding: 0 25rem;
   }
 
+  // from isTb going down; btwn isTb and isMb
   @media (max-width: ${({ theme }) => theme.breakPoints.isTablet}) {
     padding: 0 5rem;
   }
 
+  // from isMb going down; btwn isMb and isSm
   @media (max-width: ${({ theme }) => theme.breakPoints.isMobile}) {
     padding: 0 2rem;
   }
 
+  // from isSm goind down, i.e, this is the default.
   @media (max-width: ${({ theme }) => theme.breakPoints.isSmallMobile}) {
     padding: 0 1rem;
   }

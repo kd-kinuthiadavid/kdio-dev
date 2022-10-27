@@ -24,6 +24,7 @@ const defaultTheme: DefaultTheme = {
     isSmallMobile: "500px",
     isTablet: "900px",
     isDesktop: "1280px",
+    isXlDesktop: "1500px",
   },
 };
 

@@ -87,11 +87,11 @@ const Wrapper = styled.div`
     overflow-wrap: break-word; // or 'word-wrap: break-word';
     margin: 0;
 
-    @media (max-width: ${({ theme }) => theme.breakPoints.isDesktop}) {
-      max-width: 65vw;
+    @media (min-width: ${({ theme }) => theme.breakPoints.isDesktop}) {
+      max-width: 60vw;
     }
 
-    @media (min-width: ${({ theme }) => theme.breakPoints.isDesktop}) {
+    @media (min-width: ${({ theme }) => theme.breakPoints.isXlDesktop}) {
       max-width: 50vw;
     }
 
@@ -126,8 +126,12 @@ const Wrapper = styled.div`
       max-width: 80vw;
     }
 
-    @media (min-width: ${({ theme }) => theme.breakPoints.isTablet}) {
-      max-width: 40vw;
+    @media (min-width: ${({ theme }) => theme.breakPoints.isDesktop}) {
+      max-width: 50vw;
+    }
+
+    @media (min-width: ${({ theme }) => theme.breakPoints.isXlDesktop}) {
+      max-width: 35vw;
     }
 
     .highlighted_link:hover {
