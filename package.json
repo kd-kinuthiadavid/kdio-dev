@@ -3,8 +3,7 @@
   "scripts": {
     "dev": "next",
     "build": "next build",
-    "start": "next start",
-    "deploy": "yarn next build && yarn next export && gcloud app deploy -q"
+    "start": "next start"
   },
   "dependencies": {
     "@emotion/react": "^11.10.4",
