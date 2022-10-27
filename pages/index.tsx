@@ -1,5 +1,6 @@
 import Head from "next/head";
 import styled from "styled-components";
+import About from "../components/AboutSection";
 import HeroSection from "../components/HeroSection";
 import KdAppBar from "../components/KdAppBar";
 
@@ -14,6 +15,7 @@ export default function Home() {
       <KdAppBar />
       <StyledMain>
         <HeroSection />
+        <About />
       </StyledMain>
     </div>
   );
