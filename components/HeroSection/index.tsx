@@ -95,9 +95,12 @@ const Wrapper = styled.div`
     }
 
     @media (max-width: ${({ theme }) => theme.breakPoints.isTablet}) {
+      max-width: 100vw;
+    }
+
+    @media (max-width: ${({ theme }) => theme.breakPoints.isMobile}) {
       font-size: 2rem;
       line-height: 2.5rem;
-      max-width: 100vw;
     }
   }
 
@@ -112,30 +115,18 @@ const Wrapper = styled.div`
     text-align: left;
     margin: 0;
 
-    @media (min-width: ${({ theme }) => theme.breakPoints.isDesktop}) {
-      max-width: 30vw;
-    }
-
-    @media (max-width: ${({ theme }) => theme.breakPoints.isDesktop}) {
-      max-width: 50vw;
-    }
-
     @media (max-width: ${({ theme }) => theme.breakPoints.isSmallMobile}) {
       max-width: 90vw;
       font-size: 0.9rem;
       line-height: 1.3rem;
     }
 
-    /* @media (min-width: ${({ theme }) => theme.breakPoints.isSmallMobile}) {
-      max-width: 80vw;
-    } */
-
     @media (max-width: ${({ theme }) => theme.breakPoints.isTablet}) {
       max-width: 80vw;
     }
 
     @media (min-width: ${({ theme }) => theme.breakPoints.isTablet}) {
-      max-width: 50vw;
+      max-width: 40vw;
     }
 
     .highlighted_link:hover {
