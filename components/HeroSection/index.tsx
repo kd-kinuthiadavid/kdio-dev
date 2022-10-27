@@ -86,18 +86,18 @@ const Wrapper = styled.div`
     overflow-wrap: break-word; // or 'word-wrap: break-word';
     margin: 0;
 
-    @media (max-width: ${({ theme }) => theme.breakPoints.isSmallMobile}) {
-      font-size: 2rem;
-      line-height: 2.5rem;
-      max-width: 90vw;
-    }
-
     @media (max-width: ${({ theme }) => theme.breakPoints.isDesktop}) {
       max-width: 65vw;
     }
 
     @media (min-width: ${({ theme }) => theme.breakPoints.isDesktop}) {
       max-width: 50vw;
+    }
+
+    @media (max-width: ${({ theme }) => theme.breakPoints.isTablet}) {
+      font-size: 2rem;
+      line-height: 2.5rem;
+      max-width: 100vw;
     }
   }
 
@@ -106,6 +106,7 @@ const Wrapper = styled.div`
     font-size: 1.1rem;
     font-weight: 400;
     line-height: 1.6rem;
+    overflow-wrap: break-word;
 
     max-width: 50vw;
     text-align: left;
@@ -120,23 +121,32 @@ const Wrapper = styled.div`
     }
 
     @media (max-width: ${({ theme }) => theme.breakPoints.isSmallMobile}) {
-      max-width: 100vw;
+      max-width: 90vw;
       font-size: 0.9rem;
       line-height: 1.3rem;
     }
 
-    @media (max-width: ${({ theme }) => theme.breakPoints.isMobile}) {
-      max-width: 100vw;
+    /* @media (min-width: ${({ theme }) => theme.breakPoints.isSmallMobile}) {
+      max-width: 80vw;
+    } */
+
+    @media (max-width: ${({ theme }) => theme.breakPoints.isTablet}) {
+      max-width: 80vw;
+    }
+
+    @media (min-width: ${({ theme }) => theme.breakPoints.isTablet}) {
+      max-width: 50vw;
     }
 
     .highlighted_link:hover {
       text-decoration: underline;
       cursor: pointer;
     }
-    .cta {
-      display: flex;
-      gap: 1.5rem;
-    }
+  }
+
+  .cta {
+    display: flex;
+    gap: 1.5rem;
   }
 `;
 
