@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 const About = () => {
   return (
-    <Wrapper>
+    <Wrapper id="about">
       <div className="about_subHeading">
         <h3>About Me</h3>
         <div className="hr"></div>

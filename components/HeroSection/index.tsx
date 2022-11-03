@@ -5,7 +5,7 @@ import { HiglightedText } from "../sharedstyles";
 
 const HeroSection = (): JSX.Element => {
   return (
-    <Wrapper>
+    <Wrapper id="home">
       <h1>
         I Build Elegant, <br /> Functional & Intuitive UIs.
       </h1>

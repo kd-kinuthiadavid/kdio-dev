@@ -11,9 +11,14 @@ import WorkIcon from "@mui/icons-material/Work";
 import PersonIcon from "@mui/icons-material/Person";
 
 import Logo from "../../assets/images/Logo.png";
+import { useRouter } from "next/router";
 
 const KdAppBar = () => {
   const isMobile = useMediaQuery("(max-width: 650px)");
+  const router = useRouter();
+
+  const navigateToSection = (sectionName: string) =>
+    router.push(`/#${sectionName}`);
 
   return (
     <Box sx={{ flexGrow: 1 }}>
@@ -22,9 +27,9 @@ const KdAppBar = () => {
           <img src={Logo.src} alt="kinuthia david logo" className="nav_icon" />
           {!isMobile && (
             <InlineNav>
-              <p>About</p>
+              <p onClick={() => navigateToSection("home")}>Home</p>
+              <p onClick={() => navigateToSection("about")}>About</p>
               <p>Work</p>
-              <p>Poetry</p>
               <p>Contact</p>
             </InlineNav>
           )}

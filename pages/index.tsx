@@ -22,6 +22,7 @@ export default function Home() {
 }
 
 const StyledMain = styled.main`
+  scroll-behavior: smooth;
   // from isTablet going up; between isTb and isXlD
   @media (min-width: ${({ theme }) => theme.breakPoints.isTablet}) {
     padding: 0 6rem;
