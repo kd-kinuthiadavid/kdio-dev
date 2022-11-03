@@ -52,6 +52,10 @@ const Wrapper = styled.section`
     h3 {
       font-family: ${({ theme }) => theme.fonts.heading};
       font-weight: 800;
+
+      @media (max-width: ${({ theme }) => theme.breakPoints.isMobile}) {
+        font-size: 2rem;
+      }
     }
 
     .hr {
@@ -93,6 +97,10 @@ const Wrapper = styled.section`
 
       @media (max-width: 800px) {
         align-self: center;
+      }
+
+      @media (max-width: ${({ theme }) => theme.breakPoints.isMobile}) {
+        max-width: 100%;
       }
     }
   }

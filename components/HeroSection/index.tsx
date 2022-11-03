@@ -96,27 +96,23 @@ const Wrapper = styled.div`
       max-width: 100vw;
     }
 
-    @media (max-width: ${({ theme }) => theme.breakPoints.isMobile}) {
-      font-size: 2rem;
-      line-height: 2.5rem;
+    @media (max-width: ${({ theme }) => theme.breakPoints.isSmallMobile}) {
+      font-size: 3rem;
+      line-height: 4rem;
     }
   }
 
   p {
     font-family: ${({ theme }) => theme.fonts.text};
     font-size: 1.1rem;
-    font-weight: 400;
+    font-weight: 100;
     line-height: 1.6rem;
-    overflow-wrap: break-word;
-
     max-width: 50vw;
     text-align: left;
     margin: 0;
 
     @media (max-width: ${({ theme }) => theme.breakPoints.isSmallMobile}) {
-      max-width: 90vw;
-      font-size: 0.9rem;
-      line-height: 1.3rem;
+      min-width: 100%;
     }
 
     @media (max-width: ${({ theme }) => theme.breakPoints.isTablet}) {
