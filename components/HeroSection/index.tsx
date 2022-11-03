@@ -10,14 +10,11 @@ const HeroSection = (): JSX.Element => {
         I Build Elegant, <br /> Functional & Intuitive UIs.
       </h1>
       <p>
-        Hello there, my name is <HiglightedText>David Kinuthia</HiglightedText>.
-        I am a <HiglightedText>frontend engineer</HiglightedText> and I
-        specialize in{" "}
-        <HiglightedText>
-          building elegant, functional and intuitive UIs
-        </HiglightedText>
-        . Am currently modernizing the account receivable finance operations in
-        Africa{" "}
+        Hello there, my name is David Kinuthia. I am a{" "}
+        <HiglightedText>frontend engineer</HiglightedText> based in{" "}
+        <HiglightedText>Nairobi, Kenya.</HiglightedText> I specialize in
+        building elegant, functional and intuitive UIs . Am currently
+        modernizing the account receivable finance operations in Africa{" "}
         <HiglightedText className="highlighted_link">
           <a target="_blank" rel="noreferrer" href="https://www.churpy.co/">
             @Churpy
