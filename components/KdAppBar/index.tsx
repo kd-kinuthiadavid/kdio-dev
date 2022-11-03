@@ -19,7 +19,12 @@ const KdAppBar = () => {
     <Box sx={{ flexGrow: 1 }}>
       <AppBar position="fixed" sx={{ backgroundColor: "#32174D" }}>
         <AppToolBar>
-          <img src={Logo.src} alt="kinuthia david logo" className="nav_icon" />
+          <img
+            onClick={() => navigateToSection("home")}
+            src={Logo.src}
+            alt="kinuthia david logo"
+            className="nav_icon"
+          />
           {!isMobile && (
             <InlineNav>
               <p onClick={() => navigateToSection("home")}>Home</p>
@@ -65,6 +70,7 @@ const AppToolBar = styled(Toolbar)`
   img {
     height: 3rem;
     width: 3rem;
+    cursor: pointer;
   }
 `;
 
