@@ -5,11 +5,6 @@ import Toolbar from "@mui/material/Toolbar";
 import styled from "styled-components";
 import Button from "@mui/material/Button";
 import useMediaQuery from "@mui/material/useMediaQuery";
-import ContactPageIcon from "@mui/icons-material/ContactPage";
-import HistoryEduIcon from "@mui/icons-material/HistoryEdu";
-import WorkIcon from "@mui/icons-material/Work";
-import PersonIcon from "@mui/icons-material/Person";
-
 import Logo from "../../assets/images/Logo.png";
 import { useRouter } from "next/router";
 
