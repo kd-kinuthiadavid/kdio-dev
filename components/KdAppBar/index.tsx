@@ -22,7 +22,7 @@ const KdAppBar = () => {
 
   return (
     <Box sx={{ flexGrow: 1 }}>
-      <AppBar position="static" sx={{ backgroundColor: "#32174D" }}>
+      <AppBar position="fixed" sx={{ backgroundColor: "#32174D" }}>
         <AppToolBar>
           <img src={Logo.src} alt="kinuthia david logo" className="nav_icon" />
           {!isMobile && (
