@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import SectionHeading from "../SectionHeading";
 import { HiglightedText } from "../sharedstyles";
 
 const About = () => {
@@ -9,10 +10,7 @@ const About = () => {
 
   return (
     <Wrapper id="about">
-      <div className="about_subHeading">
-        <h3>About Me</h3>
-        <div className="hr"></div>
-      </div>
+      <SectionHeading text="About Me" />
       <div className="about_content">
         <div className="about_text">
           <p>
