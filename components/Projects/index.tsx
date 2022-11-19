@@ -19,7 +19,7 @@ const Projects = () => {
       description:
         "A design system implementation (both Design and Implementation) for Authr: Auth As A Service",
       isFeatured: true,
-      techUsed: ["NextJs", "Tailwind", "Figma"],
+      techUsed: ["NextJs", "Tailwind", "Figma", "Storybook"],
     },
   ];
   return (
