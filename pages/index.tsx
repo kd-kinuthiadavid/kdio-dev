@@ -3,6 +3,7 @@ import styled from "styled-components";
 import About from "../components/AboutSection";
 import HeroSection from "../components/HeroSection";
 import KdAppBar from "../components/KdAppBar";
+import Projects from "../components/Projects";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <StyledMain>
         <HeroSection />
         <About />
+        <Projects />
       </StyledMain>
     </div>
   );
