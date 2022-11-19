@@ -47,6 +47,8 @@ const Wrapper = styled.div`
   .project_featured {
     display: flex;
     width: fit-content;
+    justify-content: center;
+    align-items: center;
     background-color: ${(props) => props.theme.colors.text};
     color: ${(props) => props.theme.colors.secondary};
     border-radius: ${(props) => props.theme.spacing.borderRadius};
@@ -71,12 +73,13 @@ const Wrapper = styled.div`
 
     h4 {
       margin: 0;
-      font-size: 3rem;
+      font-size: 2rem;
     }
 
     p {
       max-width: 80%;
-      font-size: 1.2rem;
+      font-size: 1.1rem;
+      font-weight: thin;
     }
 
     .tech_used_list {
@@ -84,6 +87,9 @@ const Wrapper = styled.div`
       gap: 1rem;
 
       .tech_used {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         width: fit-content;
         background-color: ${(props) => props.theme.colors.secondary};
         color: ${(props) => props.theme.colors.primary};
