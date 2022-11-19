@@ -91,6 +91,10 @@ const Wrapper = styled.section`
       @media (max-width: ${({ theme }) => theme.breakPoints.isMobile}) {
         max-width: 100%;
       }
+
+      @media (min-width: ${({ theme }) => theme.breakPoints.isDesktop}) {
+        width: 120rem;
+      }
     }
   }
 `;
