@@ -1,7 +1,12 @@
 import React from "react";
 import styled from "styled-components";
+import { HiglightedText } from "../sharedstyles";
 
 const About = () => {
+  const startDateInYears = new Date(2018, 10, 1).getFullYear();
+  const nowInYears = new Date().getFullYear();
+  const experienceYears = nowInYears - startDateInYears;
+
   return (
     <Wrapper id="about">
       <div className="about_subHeading">
@@ -11,22 +16,31 @@ const About = () => {
       <div className="about_content">
         <div className="about_text">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde or
-            sit amet, consectetur adipisicing elit. Unde possimus delectus ut,
-            expedita, voluptatum ex dolores dolore laborum nihil porro autem
-            veniam sequi optio. Id provident eaque suscipit aliquam sunt?
+            Hello again. My name is{" "}
+            <HiglightedText>David Kinuthia,</HiglightedText> and I'm a frontend
+            engineer based in Nairobi, Kenya.
           </p>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde or
-            sit amet, consectetur adipisicing elit. Unde possimus delectus ut,
-            expedita, voluptatum ex dolores dolore laborum nihil porro autem
-            veniam sequi optio. Id provident eaque suscipit aliquam sunt?
+            I've been in tech for a little over {experienceYears} years now,
+            with a focus on frontend development. I love tech and design. As a
+            kid, I loved things that looked elegant and luxurious. This has
+            stuck with me as I've grown older and I've come to appreciate things
+            that are not only elegant but remain functional and easy to use even
+            more. This is how I came to find myself in frontend development
+            after studying Mathematics and Computer Science in college.
           </p>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde or
-            sit amet, consectetur adipisicing elit. Unde possimus delectus ut,
-            expedita, voluptatum ex dolores dolore laborum nihil porro autem
-            veniam sequi optio. Id provident eaque suscipit aliquam sunt?
+            I find myself using the following when am building something new:
+            React and its ecosystem (NextJs, Tailwind, Redux, React-Query,
+            Styled-Components e.t.c). Typescript (and Javascript). Firebase,
+            MongoDB, GCP, GitHub Actions for CI/CD, Prisma.
+          </p>
+          <p>
+            My goal has remained roughly the same: to build things that evoke
+            the same emotions that I experienced as a kid. I've found that the
+            best way to do that on the web is to build UIs that are not only
+            elegant and aesthetically pleasing but are as equally functional,
+            responsive, intuitive
           </p>
         </div>
         <div className="about_image_placeholder"></div>
