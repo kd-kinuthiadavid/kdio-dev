@@ -83,6 +83,10 @@ const Wrapper = styled.div`
     background-color: ${({ theme }) => theme.colors.secondary};
     border-radius: ${(props) => props.theme.spacing.borderRadius};
     cursor: pointer;
+
+    @media (max-width: ${({ theme }) => theme.breakPoints.isMobile}) {
+      height: 25rem;
+    }
   }
 
   .project_content {
