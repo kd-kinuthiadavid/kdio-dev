@@ -39,8 +39,9 @@ export default Projects;
 const Wrapper = styled.section`
   min-height: 100vh;
   color: ${({ theme }) => theme.colors.secondary};
+  margin-top: 3rem;
 
   .projects_list {
-    margin-top: 5rem;
+    margin-top: 1rem;
   }
 `;

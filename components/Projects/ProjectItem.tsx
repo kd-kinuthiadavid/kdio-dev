@@ -43,6 +43,7 @@ export type { ProjectItemProps };
 const Wrapper = styled.div`
   min-height: 100vh;
   font-family: ${(props) => props.theme.fonts.text};
+  margin-bottom: 5rem;
 
   .project_featured {
     display: flex;
@@ -80,10 +81,15 @@ const Wrapper = styled.div`
       max-width: 80%;
       font-size: 1.1rem;
       font-weight: thin;
+
+      @media (max-width: ${({ theme }) => theme.breakPoints.isMobile}) {
+        min-width: 100%;
+      }
     }
 
     .tech_used_list {
       display: flex;
+      flex-wrap: wrap;
       gap: 1rem;
 
       .tech_used {
