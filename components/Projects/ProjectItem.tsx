@@ -7,6 +7,9 @@ interface ProjectItemProps {
   description: string;
   techUsed: string[];
   isFeatured: boolean;
+  isComingSoon?: boolean;
+  isWip: boolean;
+  githubURL: string;
 }
 
 const ProjectItem = ({
@@ -15,15 +18,28 @@ const ProjectItem = ({
   description,
   techUsed,
   isFeatured,
+  isWip,
+  isComingSoon,
+  githubURL,
 }: ProjectItemProps) => {
   return (
-    <Wrapper>
-      {isFeatured ? (
-        <div className="project_featured">
+    <Wrapper onClick={() => window.open(githubURL, "_blank")}>
+      <div className="project_featured">
+        {isFeatured ? (
           <p>Featured Project</p>
-        </div>
-      ) : null}
-      <div className="project_image"></div>
+        ) : isComingSoon ? (
+          <p>Coming Soon</p>
+        ) : null}
+      </div>
+      <div
+        className="project_image"
+        style={{
+          backgroundImage: `url(${coverURL})`,
+          backgroundRepeat: "no-repeat",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+        }}
+      ></div>
       <div className="project_content">
         <h4>{title}</h4>
         <p>{description}</p>
@@ -71,6 +87,7 @@ const Wrapper = styled.div`
 
   .project_content {
     margin: 1rem 0;
+    overflow-wrap: break-word;
 
     h4 {
       margin: 0;

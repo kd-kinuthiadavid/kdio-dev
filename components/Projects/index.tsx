@@ -6,19 +6,40 @@ import ProjectItem, { ProjectItemProps } from "./ProjectItem";
 const Projects = () => {
   const projects: ProjectItemProps[] = [
     {
-      coverURL: "",
+      coverURL: "/images/cruunchify.png",
+      githubURL: "https://github.com/kd-kinuthiadavid/cruunchify",
       title: "Cruunchify",
       description:
         "Get statistics on how you listen to Spotify - you no longer have to wait for the end of the year to get your Spotify Wrapped.",
       isFeatured: true,
-      techUsed: ["NextJs", "React Query", "Styled-Components", "Spotify API"],
+      isWip: true,
+      techUsed: [
+        "NextJs",
+        "React Query",
+        "TailwindCss",
+        "Spotify API",
+        "Zustand",
+      ],
     },
     {
-      coverURL: "",
+      coverURL: "/images/poem-md.png",
+      githubURL: "https://github.com/kd-kinuthiadavid/poetry",
+      title: "kinuthiadavid.io.poetry",
+      description:
+        "Personal website where I share poetry, prose and short stories.",
+      isFeatured: true,
+      isWip: true,
+      techUsed: ["NextJs", "React Query", "TailwindCss", "Notion API", "Figma"],
+    },
+    {
+      coverURL: "/images/authr.jpg",
+      githubURL: "",
       title: "Authr: Design System.",
       description:
         "A design system implementation (both Design and Implementation) for Authr: Auth As A Service",
-      isFeatured: true,
+      isFeatured: false,
+      isComingSoon: true,
+      isWip: false,
       techUsed: ["NextJs", "Tailwind", "Figma", "Storybook"],
     },
   ];
