@@ -19,13 +19,13 @@ const About = () => {
             engineer based in Nairobi, Kenya.
           </p>
           <p>
-            I've been in tech for a little over {experienceYears} years now,
-            with a focus on frontend development. I love tech and design. As a
-            kid, I loved things that looked elegant and luxurious. This has
-            stuck with me as I've grown older and I've come to appreciate things
-            that are not only elegant but remain functional and easy to use even
-            more. This is how I came to find myself in frontend development
-            after studying Mathematics and Computer Science in college.
+            I've been in tech for over {experienceYears - 1} years now, with a
+            focus on frontend development. I love tech and design. As a kid, I
+            loved things that looked elegant and luxurious. This has stuck with
+            me as I've grown older and I've come to appreciate things that are
+            not only elegant but remain functional and easy to use even more.
+            This is how I came to find myself in frontend development after
+            studying Mathematics and Computer Science in college.
           </p>
           <p>
             I find myself using the following when am building something new:
