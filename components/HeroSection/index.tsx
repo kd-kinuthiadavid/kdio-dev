@@ -75,6 +75,7 @@ const Wrapper = styled.div`
 
   @media (max-width: ${({ theme }) => theme.breakPoints.isSmallMobile}) {
     padding: 3rem 0;
+    margin-top: 3rem;
   }
 
   h1 {
