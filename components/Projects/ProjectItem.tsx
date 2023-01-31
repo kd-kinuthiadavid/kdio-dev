@@ -31,21 +31,17 @@ const ProjectItem = ({
           <p>Coming Soon</p>
         ) : null}
       </div>
-      <div
-        className="project_image"
-        style={{
-          backgroundImage: `url(${coverURL})`,
-          backgroundRepeat: "no-repeat",
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-        }}
-      ></div>
+      <img src={coverURL} alt={description} />
       <div className="project_content">
         <h4>{title}</h4>
         <p>{description}</p>
         <div className="tech_used_list">
           {techUsed.length
-            ? techUsed.map((tech) => <div className="tech_used">{tech}</div>)
+            ? techUsed.map((tech, idx) => (
+                <div key={idx} className="tech_used">
+                  {tech}
+                </div>
+              ))
             : null}
         </div>
       </div>
@@ -60,6 +56,14 @@ const Wrapper = styled.div`
   min-height: 100vh;
   font-family: ${(props) => props.theme.fonts.text};
   margin-bottom: 5rem;
+
+  img {
+    width: 100%;
+    height: auto;
+    /* max-height: 35rem; */
+    object-fit: cover;
+    border-radius: ${(props) => props.theme.spacing.borderRadius};
+  }
 
   .project_featured {
     display: flex;
@@ -77,9 +81,9 @@ const Wrapper = styled.div`
     }
   }
 
-  .project_image {
+  /* .project_image {
     width: 100%;
-    height: 40rem;
+    height: auto;
     background-color: ${({ theme }) => theme.colors.secondary};
     border-radius: ${(props) => props.theme.spacing.borderRadius};
     cursor: pointer;
@@ -87,7 +91,7 @@ const Wrapper = styled.div`
     @media (max-width: ${({ theme }) => theme.breakPoints.isMobile}) {
       height: 25rem;
     }
-  }
+  } */
 
   .project_content {
     margin: 1rem 0;

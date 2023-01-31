@@ -1,9 +1,13 @@
 import React from "react";
 import styled from "styled-components";
+import useMediaQuery from "@mui/material/useMediaQuery";
+
 import SectionHeading from "../SectionHeading";
 import ProjectItem, { ProjectItemProps } from "./ProjectItem";
 
 const Projects = () => {
+  const isMobile = useMediaQuery("(max-width:650px)");
+
   const projects: ProjectItemProps[] = [
     {
       coverURL: "/images/cruunchify.png",
@@ -19,36 +23,45 @@ const Projects = () => {
         "TailwindCss",
         "Spotify API",
         "Zustand",
+        "WIP",
       ],
     },
     {
-      coverURL: "/images/poem-md.png",
+      coverURL: isMobile ? "/images/poem-xs.png" : "/images/poem-md.png",
       githubURL: "https://github.com/kd-kinuthiadavid/poetry",
       title: "kinuthiadavid.io.poetry",
       description:
         "Personal website where I share poetry, prose and short stories.",
-      isFeatured: true,
-      isWip: true,
-      techUsed: ["NextJs", "React Query", "TailwindCss", "Notion API", "Figma"],
-    },
-    {
-      coverURL: "/images/authr.jpg",
-      githubURL: "",
-      title: "Authr: Design System.",
-      description:
-        "A design system implementation (both Design and Implementation) for Authr: Auth As A Service",
       isFeatured: false,
+      isWip: true,
       isComingSoon: true,
-      isWip: false,
-      techUsed: ["NextJs", "Tailwind", "Figma", "Storybook"],
+      techUsed: [
+        "NextJs",
+        "React Query",
+        "TailwindCss",
+        "Notion API",
+        "Figma",
+        "WIP",
+      ],
     },
+    // {
+    //   coverURL: "/images/authr.jpg",
+    //   githubURL: "",
+    //   title: "Authr: Design System.",
+    //   description:
+    //     "A design system implementation (both Design and Implementation) for Authr: Auth As A Service",
+    //   isFeatured: false,
+    //   isComingSoon: true,
+    //   isWip: false,
+    //   techUsed: ["NextJs", "Tailwind", "Figma", "Storybook", "Coming Soon"],
+    // },
   ];
   return (
     <Wrapper>
       <SectionHeading text="Some Things I've Built" />
       <div className="projects_list">
-        {projects.map((project) => (
-          <ProjectItem {...project} />
+        {projects.map((project, idx) => (
+          <ProjectItem key={idx} {...project} />
         ))}
       </div>
     </Wrapper>
