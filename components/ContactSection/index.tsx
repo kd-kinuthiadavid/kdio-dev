@@ -14,6 +14,9 @@ const Contact = () => {
       </p>
       <CTABtn
         variant="outlined"
+        onClick={() =>
+          (window.location.href = "mailto:kd.kinuthiadavid@gmail.com")
+        }
         sx={{
           color: "#FF007C",
           textTransform: "capitalize",
