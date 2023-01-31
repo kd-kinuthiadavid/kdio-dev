@@ -57,7 +57,7 @@ const Projects = () => {
     // },
   ];
   return (
-    <Wrapper>
+    <Wrapper id="work">
       <SectionHeading text="Some Things I've Built" showHr={true} />
       <div className="projects_list">
         {projects.map((project, idx) => (

@@ -5,7 +5,7 @@ import { SecCTABtn } from "../HeroSection";
 
 const Contact = () => {
   return (
-    <Wrapper>
+    <Wrapper id="contact">
       <SectionHeading text="Get In Touch." showHr={false} />
       <p>
         What's next? Like what you see and you'd like us to work together? Have
