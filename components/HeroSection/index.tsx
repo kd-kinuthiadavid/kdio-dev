@@ -169,7 +169,7 @@ const CTABtn = styled(Button)`
   }
 `;
 
-const SecCTABtn = styled(CTABtn)`
+export const SecCTABtn = styled(CTABtn)`
   color: ${({ theme }) => theme.colors.text};
 `;
 

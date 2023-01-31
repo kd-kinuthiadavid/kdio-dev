@@ -58,7 +58,7 @@ const Projects = () => {
   ];
   return (
     <Wrapper>
-      <SectionHeading text="Some Things I've Built" />
+      <SectionHeading text="Some Things I've Built" showHr={true} />
       <div className="projects_list">
         {projects.map((project, idx) => (
           <ProjectItem key={idx} {...project} />

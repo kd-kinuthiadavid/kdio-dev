@@ -10,7 +10,7 @@ const About = () => {
 
   return (
     <Wrapper id="about">
-      <SectionHeading text="About Me" />
+      <SectionHeading text="About Me" showHr={true} />
       <div className="about_content">
         <div className="about_text">
           <p>

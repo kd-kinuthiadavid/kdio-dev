@@ -2,13 +2,14 @@ import styled from "styled-components";
 
 interface SectionHeadingProps {
   text: string;
+  showHr: boolean;
 }
 
-const SectionHeading = ({ text }: SectionHeadingProps) => {
+const SectionHeading = ({ text, showHr }: SectionHeadingProps) => {
   return (
     <Wrapper>
       <h3>{text}</h3>
-      <div className="hr"></div>
+      {showHr ? <div className="hr"></div> : null}
     </Wrapper>
   );
 };

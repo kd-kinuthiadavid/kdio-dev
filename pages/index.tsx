@@ -4,6 +4,7 @@ import About from "../components/AboutSection";
 import HeroSection from "../components/HeroSection";
 import KdAppBar from "../components/KdAppBar";
 import Projects from "../components/Projects";
+import Contact from "../components/ContactSection";
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
         <HeroSection />
         <About />
         <Projects />
+        <Contact />
       </StyledMain>
     </div>
   );
