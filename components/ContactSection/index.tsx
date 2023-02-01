@@ -42,7 +42,6 @@ const Wrapper = styled.section`
   justify-content: center;
   align-items: center;
   text-align: center;
-  margin-bottom: 10rem;
 
   p {
     font-size: 1.3rem;

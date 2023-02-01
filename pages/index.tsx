@@ -20,6 +20,7 @@ export default function Home() {
         <About />
         <Projects />
         <Contact />
+        <p className="footer">Designed and Built by David Kinuthia</p>
       </StyledMain>
     </div>
   );
@@ -54,5 +55,13 @@ const StyledMain = styled.main`
   // from isSm goind down, i.e, this is the default.
   @media (max-width: ${({ theme }) => theme.breakPoints.isSmallMobile}) {
     padding: 0 1rem;
+  }
+
+  .footer {
+    font-family: ${({ theme }) => theme.fonts.text};
+    text-align: center;
+    color: ${({ theme }) => theme.colors.secondary};
+    font-size: 1rem;
+    padding-bottom: 2rem;
   }
 `;
