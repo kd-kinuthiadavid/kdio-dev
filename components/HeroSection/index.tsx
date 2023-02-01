@@ -2,8 +2,12 @@ import { Button } from "@mui/material";
 import React from "react";
 import styled from "styled-components";
 import { HiglightedText } from "../sharedstyles";
+import { navigateToSection } from "../../utils";
+import { useRouter } from "next/router";
 
 const HeroSection = (): JSX.Element => {
+  const router = useRouter();
+
   return (
     <Wrapper id="home">
       <h1>
@@ -26,6 +30,9 @@ const HeroSection = (): JSX.Element => {
       <div className="cta">
         <CTABtn
           variant="contained"
+          onClick={() =>
+            (window.location.href = "mailto:kd.kinuthiadavid@gmail.com")
+          }
           sx={{
             color: "#FFEBD6",
             backgroundColor: "#FF007C",
@@ -37,6 +44,7 @@ const HeroSection = (): JSX.Element => {
         </CTABtn>
         <SecCTABtn
           variant="outlined"
+          onClick={() => navigateToSection("work", router)}
           sx={{
             color: "#FF007C",
             textTransform: "capitalize",

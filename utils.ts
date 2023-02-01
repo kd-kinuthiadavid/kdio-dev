@@ -1,3 +1,5 @@
+import { NextRouter } from "next/router";
+
 function downloadResume() {
   // create a link
   const link = document.createElement("a");
@@ -14,4 +16,8 @@ function downloadResume() {
   document.body.removeChild(link);
 }
 
-export { downloadResume };
+function navigateToSection(sectionName: string, router: NextRouter) {
+  router.push(`/#${sectionName}`);
+}
+
+export { downloadResume, navigateToSection };
