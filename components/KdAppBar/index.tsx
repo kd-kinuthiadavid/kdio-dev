@@ -7,6 +7,7 @@ import Button from "@mui/material/Button";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import Logo from "../../assets/images/Logo.png";
 import { useRouter } from "next/router";
+import { downloadResume } from "../../utils";
 
 const KdAppBar = () => {
   const isMobile = useMediaQuery("(max-width: 650px)");
@@ -36,6 +37,7 @@ const KdAppBar = () => {
               <AppBtn
                 variant="outlined"
                 color="inherit"
+                onClick={downloadResume}
                 sx={{
                   color: "#FF007C",
                   textTransform: "capitalize",
@@ -57,7 +59,7 @@ const KdAppBar = () => {
               <p onClick={() => navigateToSection("about")}>About</p>
               <p onClick={() => navigateToSection("work")}>Projects</p>
               <p onClick={() => navigateToSection("contact")}>Contact</p>
-              <p onClick={() => navigateToSection("contact")}>Resume</p>
+              <p onClick={downloadResume}>Resume</p>
             </MobileNav>
           )}
         </AppToolBar>
