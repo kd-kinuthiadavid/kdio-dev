@@ -41,7 +41,7 @@ const About = () => {
             responsive, intuitive
           </p>
         </div>
-        <div className="about_image_placeholder"></div>
+        {/* <div className="about_image_placeholder"></div> */}
       </div>
     </Wrapper>
   );
