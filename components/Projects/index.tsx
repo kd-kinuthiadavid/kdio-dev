@@ -29,7 +29,7 @@ const Projects = () => {
     {
       coverURL: isMobile ? "/images/poem-xs.png" : "/images/poem-md.png",
       githubURL: "https://github.com/kd-kinuthiadavid/poetry",
-      title: "kinuthiadavid.io.poetry",
+      title: "software & soul",
       description:
         "Personal website where I share poetry, prose and short stories.",
       isFeatured: false,
