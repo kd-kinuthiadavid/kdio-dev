@@ -11,7 +11,7 @@ const Projects = () => {
   const projects: ProjectItemProps[] = [
     {
       coverURL: "/images/cruunchify.png",
-      githubURL: "https://github.com/kd-kinuthiadavid/cruunchify",
+      githubURL: "https://cruunchify.vercel.app/",
       title: "Cruunchify",
       description:
         "Get statistics on how you listen to Spotify - you no longer have to wait for the end of the year to get your Spotify Wrapped.",
@@ -28,7 +28,7 @@ const Projects = () => {
     },
     {
       coverURL: isMobile ? "/images/poem-xs.png" : "/images/poem-md.png",
-      githubURL: "https://github.com/kd-kinuthiadavid/poetry",
+      githubURL: "https://poetry-kinuthiadavid.vercel.app/",
       title: "software & soul",
       description:
         "Personal website where I share poetry, prose and short stories.",
